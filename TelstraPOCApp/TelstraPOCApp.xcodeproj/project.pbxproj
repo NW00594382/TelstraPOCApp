@@ -8,12 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		525BD188246052A9009652C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525BD187246052A9009652C0 /* AppDelegate.swift */; };
-		525BD18A246052A9009652C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525BD189246052A9009652C0 /* ViewController.swift */; };
 		525BD190246052A9009652C0 /* TelstraPOCApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 525BD18E246052A9009652C0 /* TelstraPOCApp.xcdatamodeld */; };
 		525BD192246052B6009652C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 525BD191246052B6009652C0 /* Assets.xcassets */; };
 		525BD195246052B6009652C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 525BD193246052B6009652C0 /* LaunchScreen.storyboard */; };
 		525BD1A0246052B7009652C0 /* TelstraPOCAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525BD19F246052B7009652C0 /* TelstraPOCAppTests.swift */; };
 		525BD1AB246052B7009652C0 /* TelstraPOCAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525BD1AA246052B7009652C0 /* TelstraPOCAppUITests.swift */; };
+		76D082E8246055EE0088DF94 /* FactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D082E7246055EE0088DF94 /* FactsViewController.swift */; };
+		76D082EA2460562C0088DF94 /* FactsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D082E92460562C0088DF94 /* FactsTableViewCell.swift */; };
+		76D082EC246056830088DF94 /* FactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D082EB246056830088DF94 /* FactModel.swift */; };
+		76D082EE246056A20088DF94 /* FactsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D082ED246056A20088DF94 /* FactsViewModel.swift */; };
+		76D082F0246056B10088DF94 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D082EF246056B10088DF94 /* Service.swift */; };
+		76D082F2246057620088DF94 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D082F1246057620088DF94 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +41,6 @@
 /* Begin PBXFileReference section */
 		525BD184246052A9009652C0 /* TelstraPOCApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TelstraPOCApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		525BD187246052A9009652C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		525BD189246052A9009652C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		525BD18F246052A9009652C0 /* TelstraPOCApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TelstraPOCApp.xcdatamodel; sourceTree = "<group>"; };
 		525BD191246052B6009652C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		525BD194246052B6009652C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +51,12 @@
 		525BD1A6246052B7009652C0 /* TelstraPOCAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TelstraPOCAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		525BD1AA246052B7009652C0 /* TelstraPOCAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelstraPOCAppUITests.swift; sourceTree = "<group>"; };
 		525BD1AC246052B7009652C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76D082E7246055EE0088DF94 /* FactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsViewController.swift; sourceTree = "<group>"; };
+		76D082E92460562C0088DF94 /* FactsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsTableViewCell.swift; sourceTree = "<group>"; };
+		76D082EB246056830088DF94 /* FactModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactModel.swift; sourceTree = "<group>"; };
+		76D082ED246056A20088DF94 /* FactsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsViewModel.swift; sourceTree = "<group>"; };
+		76D082EF246056B10088DF94 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		76D082F1246057620088DF94 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +107,12 @@
 		525BD186246052A9009652C0 /* TelstraPOCApp */ = {
 			isa = PBXGroup;
 			children = (
+				76D082E6246054D50088DF94 /* Model */,
+				76D082E5246054D10088DF94 /* View */,
+				76D082E4246054CD0088DF94 /* ViewModel */,
+				76D082E3246054CA0088DF94 /* Service */,
+				76D082E2246054C60088DF94 /* Utility */,
 				525BD187246052A9009652C0 /* AppDelegate.swift */,
-				525BD189246052A9009652C0 /* ViewController.swift */,
 				525BD191246052B6009652C0 /* Assets.xcassets */,
 				525BD193246052B6009652C0 /* LaunchScreen.storyboard */,
 				525BD196246052B6009652C0 /* Info.plist */,
@@ -123,6 +137,47 @@
 				525BD1AC246052B7009652C0 /* Info.plist */,
 			);
 			path = TelstraPOCAppUITests;
+			sourceTree = "<group>";
+		};
+		76D082E2246054C60088DF94 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				76D082F1246057620088DF94 /* Constants.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		76D082E3246054CA0088DF94 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				76D082EF246056B10088DF94 /* Service.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		76D082E4246054CD0088DF94 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				76D082ED246056A20088DF94 /* FactsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		76D082E5246054D10088DF94 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				76D082E7246055EE0088DF94 /* FactsViewController.swift */,
+				76D082E92460562C0088DF94 /* FactsTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		76D082E6246054D50088DF94 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				76D082EB246056830088DF94 /* FactModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,9 +310,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				525BD18A246052A9009652C0 /* ViewController.swift in Sources */,
+				76D082EE246056A20088DF94 /* FactsViewModel.swift in Sources */,
+				76D082F0246056B10088DF94 /* Service.swift in Sources */,
+				76D082E8246055EE0088DF94 /* FactsViewController.swift in Sources */,
 				525BD190246052A9009652C0 /* TelstraPOCApp.xcdatamodeld in Sources */,
 				525BD188246052A9009652C0 /* AppDelegate.swift in Sources */,
+				76D082EC246056830088DF94 /* FactModel.swift in Sources */,
+				76D082EA2460562C0088DF94 /* FactsTableViewCell.swift in Sources */,
+				76D082F2246057620088DF94 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
