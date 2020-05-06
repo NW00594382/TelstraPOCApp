@@ -19,6 +19,9 @@
 		76D082EE246056A20088DF94 /* FactsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D082ED246056A20088DF94 /* FactsViewModel.swift */; };
 		76D082F0246056B10088DF94 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D082EF246056B10088DF94 /* Service.swift */; };
 		76D082F2246057620088DF94 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D082F1246057620088DF94 /* Constants.swift */; };
+		76DCEE862462815000D0C8A6 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DCEE852462815000D0C8A6 /* UIColor+Extension.swift */; };
+		76DCEE89246282AA00D0C8A6 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DCEE88246282AA00D0C8A6 /* UIView+Extension.swift */; };
+		76DCEE8B246282F600D0C8A6 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DCEE8A246282F600D0C8A6 /* UIImageView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +60,9 @@
 		76D082ED246056A20088DF94 /* FactsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsViewModel.swift; sourceTree = "<group>"; };
 		76D082EF246056B10088DF94 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		76D082F1246057620088DF94 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		76DCEE852462815000D0C8A6 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		76DCEE88246282AA00D0C8A6 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		76DCEE8A246282F600D0C8A6 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				76D082F1246057620088DF94 /* Constants.swift */,
+				76DCEE872462828F00D0C8A6 /* Extensions */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -178,6 +185,16 @@
 				76D082EB246056830088DF94 /* FactModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		76DCEE872462828F00D0C8A6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				76DCEE852462815000D0C8A6 /* UIColor+Extension.swift */,
+				76DCEE88246282AA00D0C8A6 /* UIView+Extension.swift */,
+				76DCEE8A246282F600D0C8A6 /* UIImageView+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,10 +330,13 @@
 				76D082EE246056A20088DF94 /* FactsViewModel.swift in Sources */,
 				76D082F0246056B10088DF94 /* Service.swift in Sources */,
 				76D082E8246055EE0088DF94 /* FactsViewController.swift in Sources */,
+				76DCEE862462815000D0C8A6 /* UIColor+Extension.swift in Sources */,
 				525BD190246052A9009652C0 /* TelstraPOCApp.xcdatamodeld in Sources */,
 				525BD188246052A9009652C0 /* AppDelegate.swift in Sources */,
 				76D082EC246056830088DF94 /* FactModel.swift in Sources */,
+				76DCEE8B246282F600D0C8A6 /* UIImageView+Extension.swift in Sources */,
 				76D082EA2460562C0088DF94 /* FactsTableViewCell.swift in Sources */,
+				76DCEE89246282AA00D0C8A6 /* UIView+Extension.swift in Sources */,
 				76D082F2246057620088DF94 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

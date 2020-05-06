@@ -13,12 +13,11 @@ struct Constants {
     struct BaseURL {
         static let url = "https:dl.dropboxusercontent.com"
     }
-    
     struct API {
         static let facts = "/s/2iodh4vg0eortkl/facts.json"
     }
     
-    static let cellIdentifier = "FactsCell"
+    static let cellIdentifier = "FactsTableViewCell"
     static let errorTitle = "Error"
     static let ok = "OK"
     static let customFontBold = "Helvetica-bold"
