@@ -11,6 +11,13 @@ import UIKit
 
 extension UIView {
     
+    /// This method is to add contraints the the view
+    /// - Parameters:
+    ///   - top: topAnchor 
+    ///   - left: leftAnchor
+    ///   - bottom: bottomAnchor
+    ///   - right: rightAnchor
+    ///   - enableInsets: Bool value
     func anchor (top: NSLayoutYAxisAnchor?, left: NSLayoutXAxisAnchor?, bottom: NSLayoutYAxisAnchor?, right: NSLayoutXAxisAnchor?, enableInsets: Bool) {
         
         var topInset = CGFloat(0)
@@ -38,6 +45,10 @@ extension UIView {
         }
     }
     
+    /// This method is to set Size constraints
+    /// - Parameters:
+    ///   - width: width
+    ///   - height: height
     func anchorSize (width: CGFloat, height: CGFloat) {
         if height != 0 {
             heightAnchor.constraint(equalToConstant: height).isActive = true

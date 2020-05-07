@@ -11,6 +11,10 @@ import UIKit
 
 extension UIImageView {
     
+    /// This method download and cache images from URL
+    /// - Parameters:
+    ///   - URLString: url to download image
+    ///   - placeHolder: placeholder image
     func imageFromServerURL(_ URLString: String, placeHolder: UIImage?) {
         
         let imageCache = NSCache<NSString, UIImage>()
