@@ -83,9 +83,9 @@ class FactsViewController: UITableViewController {
     }
 }
 
+//MARK: - UITableViewDataSource
+
 extension FactsViewController {
-    
-    //MARK: - Delegate and DataSource Methods
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         

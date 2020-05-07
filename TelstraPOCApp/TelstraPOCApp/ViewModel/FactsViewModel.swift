@@ -10,9 +10,12 @@ import Foundation
 
 class FactsViewModel {
     
+    //MARK: - Parameters
     var dataModel: FactsModel?
     var factsArray : [Fact]  = [Fact]()
     var screenTitle: String = ""
+    
+    //MARK: - Methods
     
     /// This method is to get Facts Data from Service
     /// - Parameter completion: Result parameter is to return Success or Failure
